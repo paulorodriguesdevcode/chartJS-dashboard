@@ -1,8 +1,12 @@
-$(document).ready(function(){
-	$('#toca').mouseenter(function(){
-		$('#msg-toca').show();
-	});
-  $('#toca').mouseleave(function(){
-		$('#msg-toca').hide();
-	});
-});
+
+function click(estado){
+
+	tdNomeEstado = document.querySelectorAll('#tdNomeEstado')
+
+	for (i in tdNomeEstado){
+		tdNomeEstado[i].innerText = estado
+
+	}
+
+
+}
