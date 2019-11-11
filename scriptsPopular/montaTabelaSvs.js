@@ -1,5 +1,3 @@
-
-
 var lista = [
     [01, '20/09/2019 13:27', 'Rio de Janeiro - Galeão', 'Belo Horizonte - Confins', '10/10/2019', '12/10/2019', 'Rogerio Silva', 'Aprovado', '-'],
     [02, '16/09/2019 13:17', 'São Paulo - Congonhas', 'Belo Horizonte - Confins', '20/10/2019', '11/10/2019', 'Antonia Silva', 'Emissão pendente', '-'],
