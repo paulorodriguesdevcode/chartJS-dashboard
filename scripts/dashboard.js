@@ -17,6 +17,10 @@ $(function() {
         }]
     }
     var donutOptions = {
+        legend: {
+            position: 'top',
+            
+        },
             maintainAspectRatio: false,
             responsive: true,
         }
@@ -28,6 +32,70 @@ $(function() {
         options: donutOptions
     })
 
+    /////////////////////////////////////////////////////
+
+    var donutChartCanvas1 = $('#donutChart1').get(0).getContext('2d')
+    var donutData1 = {
+        labels: [           
+            'Dentro do SLA',
+            'SLA Vencido',
+        ],
+        datasets: [{
+            data: [2309, 891],
+            backgroundColor: ['#00a65a','#f56954'],
+            
+           
+        }]
+    }
+    
+
+
+    var donutOptions1 = {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+                position: 'top',
+                
+            },
+            
+        }
+        //Create pie or douhnut chart
+        // You can switch between pie and douhnut using the method below.
+    var donutChart1 = new Chart(donutChartCanvas1, {
+        type: 'doughnut',
+        data: donutData1,
+        options: donutOptions1,
+    })
+    console.log(donutChart1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
     //-------------
