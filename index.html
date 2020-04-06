@@ -4,51 +4,52 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>flyNow 1.0 - Index</title> <!-- Font Awesome -->
-    <link rel="stylesheet" href="/dashboardCss/all.min.css"> <!-- Theme style -->
-    <link rel="stylesheet" href="/dashboardCss/adminlte.min.css"> <!-- css do mapa -->
-    <link rel="stylesheet" href="/dashboardCss/cssmapa.css">
+    <title>flyNow 1.0 - Index</title>
+    <link rel="stylesheet" href="/dashboardCss/styleAdmLte.css"> <!-- css do mapa -->
     <link rel="shortcut icon" href="/dashboardCss/imgs/aviaoLogo.png" />
-
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
     <div class="wrapper">
         <!-- Navbar menu -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <a href="/index.html" class="brand-link">
-                    <img src="dashboardCss/imgs/aviaoLogo.png" alt="AdminLTE Logo"
-                        class="brand-image img-circle elevation-3" style="opacity: .8">
-                    <span class="brand-text font-weight-light">flyNow 1.0</span>
-                </a>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Opções Aéreas</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Hospedagem</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Translado</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Adm</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                        <a href="#" class="nav-link">Suporte</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="/index.html" class="brand-link">
+                <img src="dashboardCss/imgs/aviaoLogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text text-dark">flyNow 1.0</span>
+            </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Air Options <span class="sr-only">(current)</span></a>
                     </li>
-               
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accomodation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ADM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- TEXTO TITULO  -->
         <div class="content-wrapper">
             <div class="content-header">
                 <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h4 class="m-0 text-dark">Fly Now 1.0</h4>
+                    <div class="row mb-12">
+                        <div class="col-sm-12">
+                            <h4 class="m-0 text-dark">Real Time - Dashboard Fly Now 1.0</h4>
                         </div>
                     </div>
                 </div>
@@ -60,45 +61,68 @@
                     <div class="row">
 
                         <!-- CARD  -->
-                        <div class="col-lg-6 col-6 col-md-6">
+                        <div class="col-lg-3 col-3 col-md-3">
                             <div class="small-box bg-success ">
                                 <div class="inner">
-                                    <h3 id="totalVendas">...</h3>
-                                    <p>R$ Total em Vendas</p>
+                                    <h3 id="totalVendas">R$ 950.000,00</h3>
+                                    <p>Total Sales R$</p>
                                 </div>
-                                <a href="#" class="small-box-footer">Monitor de vendas (redireciona)
+                                <a href="#" class="small-box-footer">Sales monitor
                                     <i class="fas fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div>
 
                         <!-- CARD  -->
-                        <div class="col-lg-6 col-6 ">
+                        <div class="col-lg-3 col-3 ">
+                            <div class="small-box bg-blue">
+                                <div class="inner">
+                                    <h3 id="totalPendenteAprovacao">891</h3>
+                                    <p>Delayed Flights</p>
+                                </div>
+                                <a href="#" class="small-box-footer">Table delayed flights
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD  -->
+                        <div class="col-lg-3 col-3 ">
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3 id="totalPendenteAprovacao">15</h3>
+                                    <p>Vol of issues</p>
+                                </div>
+                                <a href="#" class="small-box-footer">Issues
+                                    <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD  -->
+                        <div class="col-lg-3 col-3 ">
                             <div class="small-box bg-danger">
                                 <div class="inner">
-                                    <h3 id="totalPendenteAprovacao">...</h3>
-                                    <p>SV's Pendentes de Aprovação</p>
+                                    <h3 id="totalPendenteAprovacao">32</h3>
+                                    <p>Temperature</p>
                                 </div>
-                                <a href="#" class="small-box-footer">Tabela SV's pendentes (redireciona)
+                                <a href="#" class="small-box-footer">Go to temperature
                                     <i class="fas fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div>
             </section>
 
-            <!-- Separando Cards de Charts -->
             <hr>
 
             <!-- Sessão de charts -->
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-
-                        <!-- SLA SV's Chart -->
                         <div class="col-md-6">
-                            <div class="card card-warning">
+                            <div class="card card-danger">
                                 <div class="card-header">
-                                    <h3 class="card-title">SLA SV's</h3>
+                                    <h3 class="card-title">SLA Voos</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
                                                 class="fas fa-minus"></i>
@@ -114,11 +138,10 @@
                             </div>
                         </div>
 
-                        <!-- Gasto por CC Chart -->
                         <div class="col-md-6">
                             <div class="card card-success">
                                 <div class="card-header">
-                                    <h3 class="card-title">Gasto por CC</h3>
+                                    <h3 class="card-title">Sales by companies</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
                                                 class="fas fa-minus"></i>
@@ -133,73 +156,34 @@
                             </div>
                         </div>
 
-                        <!-- Total $ Vendas / Dia Chart -->
-                        <div class="col-md-12">
-                            <div class="card card-danger">
-                                <div class="card-header">
-                                    <h3 class="card-title">Total $ Vendas / Dia</h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
-                                                class="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card-body" style="height:400px">
-                                    <h6>Ticket Médio: <b id="tkMedio">XXX</b> </h6>
-                                    <h6>Total Mês: <b id="totalMes">XXX</b> </h6>
-                                    <h6>Quantidade vendas: <b id="qtdMes">XXX</b> </h6>
-                                    <div class="chart">
-                                        <canvas id="barChart"
-                                            style="min-height:250px;height:200px;min-width:100px;width:100px"></canvas>
-                                    </div>
-                                </div>
+                        <footer class="main-footer fixed-bottom ">
+                            <strong>Copyright &copy; 2019 <a
+                                    href="http://flyNow.com.br/flyNow/index.html">flyNow</a>.</strong> All
+                            rights reserved.
+                            <div class="float-right d-none d-sm-inline-block">
+                                <b>Version</b> 1.0
                             </div>
-                        </div>
+                        </footer> <!-- Control Sidebar -->
+                        <aside class="control-sidebar control-sidebar-dark">
+                        </aside>
+                    </div>
 
-                        
+                    <!-- jQuery nativo -->
+                    <script src="/scripts/jquery.min.js"></script>
 
+                    <!-- Resolve conflito no jQuery UI tooltip com Bootstrap tooltip -->
+                    <script>
+                        $.widget.bridge('uibutton', $.ui.button)
+                    </script>
 
-    <!-- Barra footer rodapé -->
-    <footer class="main-footer fixed-bottom">
-        <strong>Copyright &copy; 2019 <a href="http://flyNow.com.br/flyNow/index.html">flyNow</a>.</strong> All
-        rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 1.0
-        </div>
-    </footer> <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-    </aside>
-    </div> 
-    
-    <!-- jQuery nativo -->
-    <script src="/scripts/jquery.min.js"></script> 
-    
-    <!-- jQuery UI 1.11.4 -->
-    <script src="/scripts/jquery-ui.min.js"></script>
+                    <!-- ChartJS -->
+                    <script src="/scripts/Chart.min.js"></script>
 
-    <!-- Resolve conflito no jQuery UI tooltip com Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button)
-    </script>
-    
-    <!-- ChartJS -->
-    <script src="/scripts/Chart.min.js"></script>
-    
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="/scripts/dashboard.js"></script>
-    
-    <!-- AdminLTE App -->
-    <script src="/scripts/adminlte.js"></script>
+                    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+                    <script src="/scripts/dashboard.js"></script>
 
-    <!-- Import em js que calcula quantidade de svs pendentes e total vendas -->
-    <script src="/scriptsPopular/montaTabelaSvs.js"></script>
-    <script src="/scriptsPopular/montaTabelaMonitor.js"></script>
-    
-    <!-- importJS que monta mapa -->
-    <script src="/scripts/jsMapa.js"></script>
+                    <!-- AdminLTE App -->
+                    <script src="/scripts/adminlte.js"></script>
 </body>
 
 </html>
